@@ -7,22 +7,28 @@ const item = {
 };
 
 const ProjectLink = motion(Link);
-const ProjectLayout = ({ name, description, date, demoLink }) => {
+
+const ProjectLayout = ({ name, description, date, demoLink, image }) => {
   return (
     <ProjectLink
       variants={item}
       href={demoLink}
       target={"_blank"}
-      className=" text-sm md:text-base flex  items-center justify-between w-full relative rounded-lg overflow-hidden p-4 md:p-6 custom-bg"
+      className="relative rounded-lg overflow-hidden group"
     >
-      <div className="flex items-center justify-center space-x-2">
-        <h2 className="text-foreground">{name}</h2>
-        <p className="text-muted hidden sm:inline-block">{description}</p>
+      <div
+        className="absolute inset-0 bg-cover bg-center"
+        style={{ backgroundImage: `url(${image})` }}
+      />
+      <div className="relative z-10 p-6 md:p-8 bg-black/50 text-white group-hover:bg-black/70 transition-colors duration-300">
+        <h2 className="text-lg md:text-xl font-medium">{name}</h2>
+        <p className="text-sm md:text-base mt-2 text-gray-300">
+          {description}
+        </p>
+        <p className="text-sm md:text-base mt-4 text-gray-400">
+          {new Date(date).toDateString()}
+        </p>
       </div>
-      <div className="self-end flex-1 mx-2 mb-1 bg-transparent border-b border-dashed border-muted" />
-      <p className="text-muted sm:text-foreground">
-        {new Date(date).toDateString()}
-      </p>
     </ProjectLink>
   );
 };

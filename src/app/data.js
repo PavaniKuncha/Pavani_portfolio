@@ -23,6 +23,7 @@ export const projectsData = [
     description: "Track your carbon footprint",
     date: "2022-08-15",
     demoLink: "https://ecotracker.example.com",
+    image: "/11.jpg",
   },
   {
     id: 2,
@@ -30,6 +31,7 @@ export const projectsData = [
     description: "Digital art showcase platform",
     date: "2022-06-20",
     demoLink: "https://artgalleryonline.example.com",
+    image: "/artgallery.jpg",
   },
   {
     id: 3,
@@ -37,6 +39,7 @@ export const projectsData = [
     description: "Plan and track expenses",
     date: "2022-09-10",
     demoLink: "https://budgetplanner.example.com",
+    image: "/budgetplanner.jpg",
   },
   {
     id: 4,
@@ -44,48 +47,7 @@ export const projectsData = [
     description: "Monitor heart rate zones",
     date: "2022-05-30",
     demoLink: "https://healthbeat.example.com",
-  },
-  {
-    id: 5,
-    name: "RecipeFinder",
-    description: "Discover new recipes",
-    date: "2022-07-12",
-    demoLink: "https://recipefinder.example.com",
-  },
-  {
-    id: 6,
-    name: "JourneyLogger",
-    description: "Log your travels",
-    date: "2022-10-01",
-    demoLink: "https://journeylogger.example.com",
-  },
-  {
-    id: 7,
-    name: "StudyBuddy",
-    description: "Collaborative learning platform",
-    date: "2022-04-18",
-    demoLink: "https://studybuddy.example.com",
-  },
-  {
-    id: 8,
-    name: "TechTalk",
-    description: "Tech news aggregator",
-    date: "2022-11-05",
-    demoLink: "https://techtalk.example.com",
-  },
-  {
-    id: 9,
-    name: "FitTrack",
-    description: "Fitness and workout tracker",
-    date: "2022-03-22",
-    demoLink: "https://fittrack.example.com",
-  },
-  {
-    id: 10,
-    name: "MindfulMoments",
-    description: "Meditation and mindfulness app",
-    date: "2022-02-14",
-    demoLink: "https://mindfulmoments.example.com",
+    image: "/healthbeat.jpg",
   },
 ];
 
@@ -96,20 +58,14 @@ export const BtnList = [
   { label: "Contact", link: "/contact", icon: "contact", newTab: false },
   {
     label: "Github",
-    link: "https://www.github.com/codebucks27",
+    link: "https://www.github.com/PavaniKuncha",
     icon: "github",
     newTab: true,
   },
   {
     label: "LinkedIn",
-    link: "https://www.linkedin.com/in/codebucks",
+    link: "https://www.linkedin.com/in/pavani-kuncha/",
     icon: "linkedin",
-    newTab: true,
-  },
-  {
-    label: "X",
-    link: "https://www.x.com/code_bucks",
-    icon: "twitter",
     newTab: true,
   },
   {
